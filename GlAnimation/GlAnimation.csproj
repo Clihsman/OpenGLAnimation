@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{04A8E8E3-544E-474F-AAEC-9FA485B6A590}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GlAnimation</RootNamespace>
+    <AssemblyName>GlAnimation</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>main.AnimationApp</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="OpenTK, Version=3.3.2.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Display.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\gameTester\GlWindow.cs" />
+    <Compile Include="src\extern\lwcgl\vector\interface\ReadableVector.cs" />
+    <Compile Include="src\extern\lwcgl\vector\interface\ReadableVector2f.cs" />
+    <Compile Include="src\extern\lwcgl\vector\interface\ReadableVector3f.cs" />
+    <Compile Include="src\extern\lwcgl\vector\interface\ReadableVector4f.cs" />
+    <Compile Include="src\extern\lwcgl\vector\interface\WritableVector2f.cs" />
+    <Compile Include="src\extern\lwcgl\vector\interface\WritableVector3f.cs" />
+    <Compile Include="src\extern\lwcgl\vector\interface\WritableVector4f.cs" />
+    <Compile Include="src\extern\lwcgl\vector\matrix\Matrix.cs" />
+    <Compile Include="src\extern\lwcgl\vector\matrix\Matrix2f.cs" />
+    <Compile Include="src\extern\lwcgl\vector\matrix\Matrix3f.cs" />
+    <Compile Include="src\extern\lwcgl\vector\matrix\Matrix4f.cs" />
+    <Compile Include="src\extern\lwcgl\vector\vector\Quaternion.cs" />
+    <Compile Include="src\extern\lwcgl\vector\vector\Vector.cs" />
+    <Compile Include="src\extern\lwcgl\vector\vector\Vector2f.cs" />
+    <Compile Include="src\extern\lwcgl\vector\vector\Vector3f.cs" />
+    <Compile Include="src\extern\lwcgl\vector\vector\Vector4f.cs" />
+    <Compile Include="src\extern\lwcgl\drawing\FilterMode.cs" />
+    <Compile Include="src\extern\lwcgl\drawing\Texture.cs" />
+    <Compile Include="src\colladaDae\ColladaUtils.cs" />
+    <Compile Include="src\animatedModel\Joint.cs" />
+    <Compile Include="src\animatedModel\AnimatedModel.cs" />
+    <Compile Include="src\Animation\Animation.cs" />
+    <Compile Include="src\Animation\Animator.cs" />
+    <Compile Include="src\Animation\JointTransform.cs" />
+    <Compile Include="src\Animation\KeyFrame.cs" />
+    <Compile Include="src\Animation\Quaternion.cs" />
+    <Compile Include="src\openglObjects\Vao.cs" />
+    <Compile Include="src\openglObjects\Vbo.cs" />
+    <Compile Include="src\colladaLoader\AnimationLoader.cs" />
+    <Compile Include="src\colladaLoader\ColladaLoader.cs" />
+    <Compile Include="src\colladaLoader\GeometryLoader.cs" />
+    <Compile Include="src\colladaLoader\SkeletonLoader.cs" />
+    <Compile Include="src\colladaLoader\SkinLoader.cs" />
+    <Compile Include="src\xmlParser\XmlNode.cs" />
+    <Compile Include="src\xmlParser\XmlParser.cs" />
+    <Compile Include="src\utils\MyFile.cs" />
+    <Compile Include="src\utils\OpenGlUtils.cs" />
+    <Compile Include="src\utils\SmoothFloat.cs" />
+    <Compile Include="src\dataStructures\AnimatedModelData.cs" />
+    <Compile Include="src\dataStructures\AnimationData.cs" />
+    <Compile Include="src\dataStructures\JointData.cs" />
+    <Compile Include="src\dataStructures\JointTransformData.cs" />
+    <Compile Include="src\dataStructures\KeyFrameData.cs" />
+    <Compile Include="src\dataStructures\MeshData.cs" />
+    <Compile Include="src\dataStructures\SkeletonData.cs" />
+    <Compile Include="src\dataStructures\SkinningData.cs" />
+    <Compile Include="src\dataStructures\Vertex.cs" />
+    <Compile Include="src\dataStructures\VertexSkinData.cs" />
+    <Compile Include="src\loaders\AnimatedModelLoader.cs" />
+    <Compile Include="src\loaders\AnimationLoader.cs" />
+    <Compile Include="src\textures\Texture.cs" />
+    <Compile Include="src\textures\TextureBuilder.cs" />
+    <Compile Include="src\textures\TextureData.cs" />
+    <Compile Include="src\textures\TextureUtils.cs" />
+    <Compile Include="src\main\GeneralSettings.cs" />
+    <Compile Include="src\extern\lwcgl\opengl\GLContext.cs" />
+    <Compile Include="src\extern\lwcgl\opengl\Capabilities.cs" />
+    <Compile Include="src\main\SceneLoader.cs" />
+    <Compile Include="src\main\Camera.cs" />
+    <Compile Include="src\main\AnimationApp.cs" />
+    <Compile Include="src\renderer\AnimatedModelRenderer.cs" />
+    <Compile Include="src\renderer\AnimatedModelShader.cs" />
+    <Compile Include="src\shaders\ShaderProgram.cs" />
+    <Compile Include="src\shaders\Uniform.cs" />
+    <Compile Include="src\shaders\UniformBoolean.cs" />
+    <Compile Include="src\shaders\UniformFloat.cs" />
+    <Compile Include="src\shaders\UniformMat4Array.cs" />
+    <Compile Include="src\shaders\UniformMatrix.cs" />
+    <Compile Include="src\shaders\UniformSampler.cs" />
+    <Compile Include="src\shaders\UniformVec2.cs" />
+    <Compile Include="src\shaders\UniformVec3.cs" />
+    <Compile Include="src\renderEngine\MasterRenderer.cs" />
+    <Compile Include="src\renderEngine\RenderEngine.cs" />
+    <Compile Include="src\skybox\CubeGenerator.cs" />
+    <Compile Include="src\skybox\SkyboxShader.cs" />
+    <Compile Include="src\skybox\SkyboxRenderer.cs" />
+    <Compile Include="src\scene\ICamera.cs" />
+    <Compile Include="src\scene\Scene.cs" />
+    <Compile Include="src\shaders\UniformVec4.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="src\renderer\animatedEntityFragment.glsl" />
+    <None Include="src\renderer\animatedEntityVertex.glsl" />
+    <None Include="src\skybox\skyboxFragment.glsl" />
+    <None Include="src\skybox\skyboxVertex.glsl" />
+  </ItemGroup>
+</Project>

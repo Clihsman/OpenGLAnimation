@@ -1,0 +1,13 @@
+﻿<Properties StartupItem="GlAnimation\GlAnimation.csproj" RefactoringSettings.EnableRefactorings="True">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="GlAnimation\GlAnimation.csproj">
+    <Files>
+      <File FileName="GlAnimation\src\Animation\Animator.cs" Line="1" Column="1" />
+      <File FileName="GlAnimation\GlAnimation.csproj" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

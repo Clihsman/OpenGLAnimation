@@ -1,0 +1,9 @@
+D:\OpenGL\CSharp\Demos\GlAnimation\GlAnimation\bin\Debug\GlAnimation.exe.config
+D:\OpenGL\CSharp\Demos\GlAnimation\GlAnimation\bin\Debug\GlAnimation.exe
+D:\OpenGL\CSharp\Demos\GlAnimation\GlAnimation\bin\Debug\GlAnimation.pdb
+D:\OpenGL\CSharp\Demos\GlAnimation\GlAnimation\bin\Debug\OpenTK.dll
+D:\OpenGL\CSharp\Demos\GlAnimation\GlAnimation\obj\x86\Debug\GlAnimation.csproj.CoreCompileInputs.cache
+D:\OpenGL\CSharp\Demos\GlAnimation\GlAnimation\obj\x86\Debug\GlAnimation.csproj.CopyComplete
+D:\OpenGL\CSharp\Demos\GlAnimation\GlAnimation\obj\x86\Debug\GlAnimation.exe
+D:\OpenGL\CSharp\Demos\GlAnimation\GlAnimation\obj\x86\Debug\GlAnimation.pdb
+D:\OpenGL\CSharp\Demos\GlAnimation\GlAnimation\obj\x86\Debug\GlAnimation.csprojAssemblyReference.cache
